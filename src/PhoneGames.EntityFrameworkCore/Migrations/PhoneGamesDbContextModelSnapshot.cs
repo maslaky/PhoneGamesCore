@@ -1343,9 +1343,9 @@ namespace PhoneGames.Migrations
 
             modelBuilder.Entity("PhoneGames.Business.Questions.Question", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreationTime")

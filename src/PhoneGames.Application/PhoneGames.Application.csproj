@@ -13,4 +13,8 @@
   <ItemGroup>
     <ProjectReference Include="..\PhoneGames.Core\PhoneGames.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Generics" />
+    <Folder Include="IGenerics" />
+  </ItemGroup>
 </Project>

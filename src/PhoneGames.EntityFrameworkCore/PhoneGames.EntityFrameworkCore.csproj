@@ -13,6 +13,10 @@
     <Compile Remove="Migrations\20190111071724_Upgraded_To_Abp_v4_1_0.cs" />
     <Compile Remove="Migrations\20200131215136_question-and-game.cs" />
     <Compile Remove="Migrations\20200131215136_question-and-game.Designer.cs" />
+    <Compile Remove="Migrations\20200131215320_question-and-game.cs" />
+    <Compile Remove="Migrations\20200131215320_question-and-game.Designer.cs" />
+    <Compile Remove="Migrations\20200131220752_question-and-game-2.cs" />
+    <Compile Remove="Migrations\20200131220752_question-and-game-2.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />

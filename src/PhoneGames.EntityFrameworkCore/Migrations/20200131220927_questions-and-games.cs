@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PhoneGames.Migrations
 {
-    public partial class questionandgame : Migration
+    public partial class questionsandgames : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -31,7 +31,7 @@ namespace PhoneGames.Migrations
                 name: "Questions",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CreationTime = table.Column<DateTime>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: true),

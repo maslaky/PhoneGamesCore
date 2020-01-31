@@ -10,8 +10,8 @@ using PhoneGames.EntityFrameworkCore;
 namespace PhoneGames.Migrations
 {
     [DbContext(typeof(PhoneGamesDbContext))]
-    [Migration("20200131215320_question-and-game")]
-    partial class questionandgame
+    [Migration("20200131220927_questions-and-games")]
+    partial class questionsandgames
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1345,9 +1345,9 @@ namespace PhoneGames.Migrations
 
             modelBuilder.Entity("PhoneGames.Business.Questions.Question", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
+                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("CreationTime")

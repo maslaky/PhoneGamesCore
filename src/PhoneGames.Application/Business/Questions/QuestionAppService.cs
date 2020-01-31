@@ -1,7 +1,13 @@
-﻿namespace PhoneGames.Business.Questions
+﻿using Abp.Application.Services;
+using Abp.Domain.Repositories;
+
+
+namespace PhoneGames.Business.Questions
 {
-    public class QuestionAppService
+    public class QuestionAppService : CrudAppService<Question, QuestionDto>
     {
-        
+        public QuestionAppService(IRepository<Question, int> repository) : base(repository)
+        {
+        }
     }
 }
